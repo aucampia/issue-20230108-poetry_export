@@ -1,0 +1,19 @@
+[tool.poetry]
+authors = ["Your Name <you@example.com>"]
+description = ""
+name = "issue-poetry-extras"
+packages = [{include = "issue_poetry_extras"}]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+pydantic = {version = "^1.10.4", optional = true}
+python = "^3.11"
+typer = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pydantic = "*"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
