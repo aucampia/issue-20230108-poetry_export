@@ -12,7 +12,11 @@ python = "^3.11"
 typer = "^0.7.0"
 
 [tool.poetry.group.dev.dependencies]
-pydantic = "*"
+pydantic = {version = "^1.10.4"}
+fsspec = "^2022.11.0"
+
+[tool.poetry.extras]
+pydantic = ["pydantic"]
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
