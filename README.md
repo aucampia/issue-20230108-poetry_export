@@ -2,7 +2,7 @@
 
 
 ```console
-$ pipx run --spec=poetry==1.3.1 poetry export --only=main
+$ pipx run --spec=poetry==1.3.1 --python=python3.11 poetry export --only=main
 click==8.1.3 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e \
     --hash=sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48
@@ -57,7 +57,7 @@ $ pipx run --spec=poetry==1.3.1 poetry ^C
 ```
 
 ```console
-$ pipx run --spec=poetry==1.3.1 poetry export
+$ pipx run --spec=poetry==1.3.1 --python=python3.11 poetry export --only=main
 click==8.1.3 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e \
     --hash=sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48
